@@ -15,7 +15,7 @@ A sample application for testing purposes.
     1. Install ruby using rvm: `rvm install 2.4.2`
     1. Create the gemset: `rvm 2.4.2 do rvm gemset create bookApp`
     1. Use the gemset: `rvm use 2.4.2@bookApp`
-    1. Install Rails: `gem install rails -v '5.1.5' --no-ri --no-rdoc`
+    1. Install Rails: `gem install rails -v '5.1.6' --no-ri --no-rdoc`
     1. Install bundler: `gem install bundler`
     1. Install the gems: `bundle install`
 1. Include this [Bootstrap library](https://github.com/twbs/bootstrap-rubygem), using the rails package manager.
