@@ -30,7 +30,8 @@ and books in their respective models.
 1. Modify the author input in the book form to be a collection_select of existing authors.
 1. Modify the root route (in `/config/routes.rb`) to go to the books index page.
 1. Use the Bootstrap table class on all tables.
-1. Use Bootstrap button classes on all buttons, and on links outside of tables.
+1. Use Bootstrap button classes on all buttons and links (pick whichever classes you would like).
+1. Feel free to clean up the views and/or add navigation, but know that it is not a requirement (the app does not need to look nice, just work).
 1. Submit a pull request.
 
 ### Useful Information
