@@ -23,6 +23,7 @@ A sample application for testing purposes.
 1. Generate a scaffold for a Book model. Include the attributes: year, title, ISBN, and author_id. Add an index on author_id.
 1. An author can have many books, and a book belongs to one author, specify this relationship between authors and books in their respective models.
 1. Add the following validation to the book model: author_id must be present, year must include only numbers.
+1. Modify the author input in the book form to be a collection_select of existing authors.
 1. Modify the root route (in `/config/routes.rb`) to go to the books index page.
 1. Use the Bootstrap table class on all tables.
 1. Use Bootstrap button classes on all buttons, and on links outside of tables.
