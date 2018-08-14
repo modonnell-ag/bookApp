@@ -34,7 +34,8 @@ and books in their respective models.
 
 ### Useful Information
 #### Running the Application
-Run the application by opening up a terminal, navigating to the root of the project, and entering: `rails s`   
+Run the application by opening up a terminal, navigating to the root of the project, and entering: `rails server`.  
+To top the rails server, press `ctrl + c`.
 #### Guard
 This project uses guard with the following plugins:  
 1. **livereload**  
@@ -45,4 +46,5 @@ This project uses guard with the following plugins:
     * tests will run automatically upon changes being made while running guard, and the full suite can be
     run by hitting the enter key in the guard console   
        
-To run the guard console, open a separate terminal window, navigate to the root of the project and enter: `guard`
+To run the guard console, open a separate terminal window, navigate to the root of the project and enter: `guard`.  
+To stop the guard console, press `q`.
