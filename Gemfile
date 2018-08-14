@@ -50,9 +50,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'guard', :require => false
   gem 'guard-livereload', :require => false
-  gem 'guard-sidekiq', require: false
-  gem 'guard-rspec', require: false
-  gem 'terminal-notifier-guard', :require => false
+  gem 'guard-minitest'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

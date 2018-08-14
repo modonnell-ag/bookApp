@@ -6,7 +6,8 @@ A sample application for testing purposes.
 
 1. Fork the repo.
 1. Set up the project:
-    1. Install rvm (if you don't already have it). **Note**: if installing on Ubuntu, follow the instructions [here](https://github.com/rvm/ubuntu_rvm).
+    1. Install rvm (if you don't already have it). **Note**: if installing on Ubuntu, follow the instructions
+     [here](https://github.com/rvm/ubuntu_rvm).
         - `gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3`
         - `\curl -sSL https://get.rvm.io | bash -s stable`
         - `source $HOME/.bashrc`
@@ -18,13 +19,30 @@ A sample application for testing purposes.
     1. Install Rails: `gem install rails -v '5.1.6' --no-ri --no-rdoc`
     1. Install bundler: `gem install bundler`
     1. Install the gems: `bundle install`
+1. Check out the dev branch.    
 1. Include this [Bootstrap library](https://github.com/twbs/bootstrap-rubygem), using the rails package manager.
 1. Generate a scaffold for an Author model. Include the attribute: full_name.
 1. Generate a scaffold for a Book model. Include the attributes: year, title, ISBN, and author_id. Add an index on author_id.
-1. An author can have many books, and a book belongs to one author, specify this relationship between authors and books in their respective models.
+1. An author can have many books, and a book belongs to one author, specify this relationship between authors 
+and books in their respective models.
 1. Add the following validation to the book model: author_id must be present, year must include only numbers.
 1. Modify the author input in the book form to be a collection_select of existing authors.
 1. Modify the root route (in `/config/routes.rb`) to go to the books index page.
 1. Use the Bootstrap table class on all tables.
 1. Use Bootstrap button classes on all buttons, and on links outside of tables.
 1. Submit a pull request.
+
+### Useful Information
+#### Running the Application
+Run the application by opening up a terminal, navigating to the root of the project, and entering: `rails s`   
+#### Guard
+This project uses guard with the following plugins:  
+1. **livereload**  
+    * if working in Chrome, 
+    [this extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en) 
+    will reload the broswer for you when you make changes while guard is running  
+1. **minitest**  
+    * tests will run automatically upon changes being made while running guard, and the full suite can be
+    run by hitting the enter key in the guard console   
+       
+To run the guard console, open a separate terminal window, navigate to the root of the project and enter: `guard`
